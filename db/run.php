@@ -7,7 +7,7 @@ if($con == false){
 function dataDelete($table,$id){
 	global $con;
 	$sql = "delete from ".$table." where id=".$id;
-	 mysqli_query($con,$sql);
+	mysqli_query($con,$sql);
 }
 
 function rawSql($sql){
